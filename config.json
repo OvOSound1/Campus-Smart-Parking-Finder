@@ -1,0 +1,42 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "text_protocol_port": 5000,
+    "rpc_port": 5001,
+    "sensor_port": 5002,
+    "pubsub_port": 5003,
+    "thread_pool_size": 10,
+    "backlog": 5,
+    "reservation_timeout_seconds": 300
+  },
+  "lots": [
+    {
+      "id": "LOT-A",
+      "capacity": 100,
+      "occupied": 50
+    },
+    {
+      "id": "LOT-B",
+      "capacity": 150,
+      "occupied": 75
+    },
+    {
+      "id": "LOT-C",
+      "capacity": 80,
+      "occupied": 40
+    },
+    {
+      "id": "LOT-D",
+      "capacity": 200,
+      "occupied": 120
+    }
+  ],
+  "pubsub": {
+    "max_queue_size": 100,
+    "back_pressure_policy": "drop_oldest"
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "json"
+  }
+}

@@ -1,0 +1,7 @@
+# Campus Smart Parking Finder Requirements
+# This project primarily uses Python standard library
+# No external dependencies required for core functionality
+
+# Optional: for enhanced testing/benchmarking (uncomment if needed)
+# matplotlib>=3.5.0
+# numpy>=1.21.0
