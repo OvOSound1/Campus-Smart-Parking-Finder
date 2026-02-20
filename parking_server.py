@@ -11,7 +11,7 @@ import time
 import logging
 from typing import Dict, List, Optional, Set
 from datetime import datetime, timedelta
-from queue import Queue, Full
+from queue import Queue, Full, Empty
 import struct
 
 # Configure structured logging
@@ -498,9 +498,11 @@ class ParkingServer:
                     else:
                         logger.warning(f"Update for unknown lot: {lot_id}")
                         
+            except Empty:
+                # Normal timeout, continue
+                continue
             except Exception as e:
-                if not isinstance(e, TimeoutError):
-                    logger.error(f"Update worker error: {e}")
+                logger.error(f"Update worker error: {e}")
     
     # ========== PUB/SUB SERVER ==========
     
