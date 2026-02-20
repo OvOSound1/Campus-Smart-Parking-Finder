@@ -1,4 +1,5 @@
 # Campus Smart Parking Finder
+Author: Francisco Fausto, Berit Cheema, Tasneem Iqbal
 
 A distributed parking management system implementing multithreaded server architecture, RPC communication, asynchronous messaging, and publish/subscribe event delivery.
 
@@ -525,14 +526,3 @@ Campus-Smart-Parking-Finder/
 - Default is 300 seconds (5 minutes)
 - Adjust `reservation_timeout_seconds` in config.json
 
-## License
-
-Academic project for CSULB Distributed Systems course.
-
-## Authors
-
-[Add team member names here]
-
-## Acknowledgments
-
-Based on Assignment 2 requirements for Campus Smart Parking Finder.
